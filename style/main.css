@@ -137,7 +137,7 @@ position: relative;
 .deilsProducts {
     padding: 22px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
 }
@@ -147,7 +147,7 @@ position: relative;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    height: 290x; 
+   
 }
 .deilsProduct img {
     border-radius: 15px;
@@ -163,4 +163,44 @@ position: relative;
 .deilsOldPrice {
     font-size: 15px;
     text-decoration: line-through;
+}
+
+/* JOYBUY STYLE */
+.juybuy_block {
+    padding: 35px;
+    background-color: #F5F5F5;
+}
+.juybuy_block h2 {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.joys {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.joyblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.joyimg {
+    padding-right: 20px;
+}
+.joyimg img {
+    width: 32px;
+    height: 27px;
+}
+.joytext h5 {
+    color: #666;
+    font-size: 13px;
+    padding-bottom: 8px;
+    
+}
+.joytext span {
+    color: #999;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    width: 120px;
 }
