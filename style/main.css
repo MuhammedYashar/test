@@ -86,12 +86,50 @@ position: relative;
 
 /* SLIDERS STYLE */
 .sliders {
+    position: relative;
   max-width: 1800px;
- 
+  overflow: hidden;
+  height: 490px;
 }
 .sliders img {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+    position: absolute;
+    left: -21%;
+}
 
+/* DEILS STYLE  */
+.section_deils {
+    transform: translateY(-140px);
+}
+.deil_block {
+    background: #fff;
+    padding-top: 20px;
+}
+.deilHead {
+    padding: 0 25px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.deilHeading {
+    display: flex;
+    align-items: center;
+
+}
+.deilHeading h2 {
+    padding-right: 25px;
+}
+.deilClock {
+    display: flex;
+    align-items: center;
+}
+
+.deilsClockText {
+    padding-right: 15px;
+    font-size: 20px;
+}
+.deilsClocks {
+    font-size: 25px;
+}
+.deilHeadMore {
+    font-size: 20px;
 }
