@@ -166,13 +166,16 @@ position: relative;
 }
 
 /* JOYBUY STYLE */
+.section_juybuy {
+    transform: translateY(-80px);
+}
 .juybuy_block {
-    padding: 35px;
+    padding: 45px 35px;
     background-color: #F5F5F5;
 }
 .juybuy_block h2 {
     font-size: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .joys {
     width: 100%;
@@ -203,4 +206,11 @@ position: relative;
     font-size: 12px;
     font-weight: 400;
     width: 120px;
+}
+
+/* FEATURED STYLE */
+.feaduredCat {
+    width: 200px;
+    height: 200px;
+    
 }
