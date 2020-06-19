@@ -17,13 +17,17 @@ a, a:hover {
     color: #000000;
 }
 .main {
-    width: 1270px;
+    width: 1220px;
     margin: 0 auto;
 }
 /* HEAD STYLE */
-
+.section_head {
+    padding-bottom: 20px;
+}
 .topHead {
-    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 10px 0 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -31,4 +35,63 @@ a, a:hover {
 }
 .headMoney, .headGuide, .headHelp, .headMedia, .headSell {
     padding-right: 15px;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+.headSearch{
+position: relative;
+}
+.headSearchInput {
+    background-color: #DBDBDB;
+    border: 0;
+    height: 37px;
+    width: 500px;
+}
+.headSearchButton {
+    position: absolute;
+    background-color: #E33333;
+    border: 0;   
+    width: 37px;
+    height: 37px;
+}
+.headMenu {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headMenuSp {
+    display: block;
+    margin: 0 -50px;
+   
+}
+.bottomHead{
+    font-size: 17px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+}
+.bottomCategories {
+    padding-right: 250px;
+}
+.bottomHeadMenu {
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SLIDERS STYLE */
+.sliders {
+  max-width: 1800px;
+ 
+}
+.sliders img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
 }
