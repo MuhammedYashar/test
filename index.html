@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
@@ -50,11 +51,30 @@
         </div>
 
     </section>
+
     <section class="section_slider">
         <div class="sliders">
-            <img class="slider" src="img/scroll/img-1.png">
+            <div class="showSlide fade">  
+                <a href="#"><img src="img/scroll/img-1.png"></a>
+            </div>
+            <div class="showSlide fade">  
+                <a href="#"><img src="img/scroll/img2.png"></a>
+            </div>
+            <div class="showSlide fade">  
+                <a href="#"><img src="img/scroll/img3.png"></a>
+            </div>
+            <div class="showSlide fade">  
+                <a href="#"><img src="img/scroll/img4.png"></a>
+            </div>
+            <div class="showSlide fade">  
+                <a href="#"><img src="img/scroll/img5.png"></a>
+            </div>
+            <!-- Navigation arrows -->  
+                <a class="left" onclick="nextSlide(-1)">❮</a>  
+                <a class="right" onclick="nextSlide(1)">❯</a>  
         </div>
     </section>
+
     <section class="section_deils">
         <div class="main">
             <div class="deil_block">
@@ -306,5 +326,37 @@
             </div>
         </div>
     </section>
+    <section class="section_footer">
+        <div class="main">
+            <div class="headUps">
+                <div class="headUp">
+                    <div class="headUpIcon"><i class="far fa-money-bill-alt"></i></div>
+                    <span class="headUpTitle">Secure Payments</span>
+                    <span class="headUpDesc">Pay with secure payment methods</span>
+                </div>
+                <div class="headUp">
+                    <div class="headUpIcon"><i class="far fa-calendar-check"></i></div>
+                    <span class="headUpTitle">30-day Return Policy</span>
+                    <span class="headUpDesc">If your item is damaged or not as described, you may return it within 30 days after delivery.</span>
+                </div>
+                <div class="headUp">
+                    <div class="headUpIcon"><i class="fas fa-headset"></i></div>
+                    <span class="headUpTitle">24/7 Customer Service</span>
+                    <span class="headUpDesc">We'll respond to you within 24 hours</span>
+                </div>
+                <div class="headUp">
+                    <div class="headUpIcon"><i class="fas fa-plane-departure"></i></div>
+                    <span class="headUpTitle">Worldwide Delivery</span>
+                    <span class="headUpDesc">Pay with secure payment methods</span>
+                </div>
+                <div class="headUp">
+                    <div class="headUpIcon"><i class="far fa-copyright"></i></div>
+                    <span class="headUpTitle">International Brands</span>
+                    <span class="headUpDesc">Guaranteed authenticity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/slider.js"></script>
 </body>
 </html>
