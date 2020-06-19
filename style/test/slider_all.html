@@ -121,19 +121,17 @@
     .container > div {
         width: 100px;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         white-space: nowrap;
-
     }
-
     .container{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
     .main {
-    width: 1220px;
-    margin: 0 auto;
+        width: 1220px;
+        margin: 0 auto;
     }
     .services{
         color: grey;
@@ -144,10 +142,9 @@
     }
     .payments{
         color: grey;
+        text-align: left;
         font-size: 15px;
-        width: 100px;
-        word-wrap: break-word;
-
+        width: 50px;
     }
 </style>
 </head>  
@@ -232,11 +229,21 @@
         <div class = "flex-container">
                 <div>Customer Service<br>
                     <div class="services">
-                        <div><br> My Orders</div>
-                        <div>Payments</div>
-                        <div>Refunds and Returns</div>
-                        <div>Shipping</div>
-                        <div>Help Center</div>
+                        <div>
+                            <br> My Orders
+                        </div>
+                        <div>
+                            Payments   
+                        </div>
+                        <div>
+                            Refunds and Returns
+                        </div>
+                        <div>
+                            Shipping
+                        </div>
+                        <div>
+                            Help Center
+                        </div>
                     </div>
                 </div>
 
