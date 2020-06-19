@@ -214,9 +214,7 @@ position: relative;
 .section_featured {
     padding-bottom: 50px;
 }
-.featured_block {
 
-}
 .featured_block h2 {
     padding-left: 30px;
     font-size: 25px;
@@ -253,7 +251,28 @@ position: relative;
 
 /* WEEKLY STYLE */
 .section_wicky {
+    position: relative;
     padding-bottom: 40px;
+}
+.section_wicky::before {
+    content: ''; 
+    position: absolute; 
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: #D43530;
+    left: 35px;
+    top: 57px;
+
+}
+.wickyLogo {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 25px;
+    font-weight: 500;
+    left: -165px;
+    top: 300px;
+    letter-spacing: 10px;
 }
 .wicky_block h2 {
     padding-left: 30px;
@@ -280,8 +299,26 @@ position: relative;
     background: #C7C7C7;
 }
 .wickyAbout {
+    padding: 30px;
     height: 210px;
     background: #F5F5F5;
+}
+.wickyAbout h3 {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 18px;
+}
+.wickyAbout h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #D43530;
+    left: -8px;
+    top: 8px;
 }
 .wickyone {
     width: 590px;
@@ -295,6 +332,32 @@ position: relative;
     width: 100%;
 }
 .wickyoneAbout {
+    padding:40px 30px ;
     height: 210px;
     background-color: #E5DDD4;
+}
+.wickyoneAbout h3 {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 18px;
+}
+.wickyoneAbout h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #D43530;
+    left: -8px;
+    top: 8px;
+}
+.wickyoneAboutS {
+    padding-bottom: 20px;
+    color: #666;
+}
+.wickyonePrice {
+    font-size: 20px;
+    font-weight: 500;
 }
