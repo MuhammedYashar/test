@@ -76,6 +76,49 @@
         }  
     }  
 </style>  
+
+<style>
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightgray;
+        text-align: left;
+    }
+    .about h2{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .about p{
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .find h2{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .find p{
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .flex-container > div {
+        width: 100px;
+        text-align: center;
+        font-size: 15px;
+        white-space: nowrap;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+</style>
 </head>  
 <body>  
 <div class="slidercontainer">  
@@ -96,7 +139,34 @@
     <!-- Navigation arrows -->  
     <a class="left" onclick="nextSlide(-1)">❮</a>  
     <a class="right" onclick="nextSlide(1)">❯</a>  
-</div>  
+</div> 
+<div class="footer">
+    <div class="about">
+        <h2 class="about">About Joybuy</h2>
+        <p class="about">
+        Operated by Chinese ecommerce giant, JD.com, Joybuy offers online shoppers a wide selection of smartphones, gaming laptops, consumer electronics, women's clothing, stuffed toys, and more.
+
+        As China’s largest ecommerce platform by revenue, JD.com offers a world-class set of online shopping services to its legion of users, who now number close to 200 million in total.
+        
+        JD.com listed on the NASDAQ in May 2014 in the exchange's biggest flotation of that year.
+        
+        As a technology-driven company, JD.com has focused considerable effort in developing a robust and scalable platform that not only supports the company’s rapid growth, but also allows it to provide cutting-edge technology and services to partners and customers.
+        </p>
+    </div>
+    <div class="find">
+        <h2>Find Out More</h2>
+        <p>Browse Alphabetically : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0~9 </p>
+    </div>
+    
+    <div class = "flex-container">
+            <div>Customer Service</div>
+            <div>Get to Know Us</div>
+            <div>Partner Promotion</div>
+            <div>Make Money with US</div>
+            <div>JD.com Group</div>
+        
+    </div>
+</div>
 
 <script type="text/javascript">  
     var slide_index = 1;  
