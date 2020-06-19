@@ -86,12 +86,131 @@ position: relative;
 
 /* SLIDERS STYLE */
 .sliders {
+    position: relative;
   max-width: 1800px;
- 
+  overflow: hidden;
+  height: 490px;
 }
 .sliders img {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+    position: absolute;
+    left: -21%;
+}
 
+/* DEILS STYLE  */
+.section_deils {
+    transform: translateY(-140px);
+}
+.deil_block {
+    background: #fff;
+    padding-top: 20px;
+}
+.deilHead {
+    padding: 0 25px 30px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.deilHeading {
+    display: flex;
+    align-items: center;
+
+}
+.deilHeading h2 {
+    padding-right: 25px;
+    font-size: 30px;
+}
+.deilClock {
+    display: flex;
+    align-items: center;
+}
+
+.deilsClockText {
+    padding-right: 15px;
+    font-size: 28px;
+}
+.deilsClocks {
+    font-size: 28px;
+}
+.deilHeadMore {
+    font-size: 20px;
+}
+.deilsProducts {
+    padding: 22px;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.deilsProduct {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+   
+}
+.deilsProduct img {
+    border-radius: 15px;
+    
+    width: 220px;
+    height: 240px;
+}
+.deilsPrice {
+    padding: 10px 0 5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.deilsOldPrice {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+/* JOYBUY STYLE */
+.section_juybuy {
+    transform: translateY(-80px);
+}
+.juybuy_block {
+    padding: 45px 35px;
+    background-color: #F5F5F5;
+}
+.juybuy_block h2 {
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+.joys {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.joyblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.joyimg {
+    padding-right: 20px;
+}
+.joyimg img {
+    width: 32px;
+    height: 27px;
+}
+.joytext h5 {
+    color: #666;
+    font-size: 13px;
+    padding-bottom: 8px;
+    
+}
+.joytext span {
+    color: #999;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    width: 120px;
+}
+
+/* FEATURED STYLE */
+.feaduredCat {
+    width: 200px;
+    height: 200px;
+    
 }
