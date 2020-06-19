@@ -130,6 +130,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
     }
     .main {
     width: 1220px;
@@ -141,13 +142,27 @@
         text-align: left;
         font-size: 15px;
         width: 50px;
+        
     }
     .payments{
+        
         color: grey;
         font-size: 15px;
+        display: flex;
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+    .payments > div {
+        color: #000;
+        padding-bottom: 15px;
+    }
+    .payments > p {
+        
+        font-size: 14px;
+        color: #666;
         width: 100px;
-        word-wrap: break-word;
-
     }
 </style>
 </head>  
@@ -175,46 +190,52 @@
 <div class="footer">
     <div class="main">
         <div class="container">
-            <div>Secure Payments<br>
                 <div class="payments">
+                    <div>Secure Payments</div>
                    <p>
                        Play with secure payment methods
                    </p> 
                 </div>
-            </div>
-            <div>30-day Return Policy<br>
+            
+            
                 <div class="payments">
+                    <div>30-day Return Policy</div>
+                    
                     <p>
                         If your item is damaged or not as described, you may return it within 30 days after delivery.
                     </p>
                 </div>
-            </div>
-            <div>24/7 Customer Service<br>
+            
+            
                 <div class="payments">
+                    <div>24/7 Customer Service</div>
+
                     <p>
                         We'll respond to you within 24 hours
                     </p>
                 </div>
-            </div>
-            <div>Worldwide Delivery<br>
+            
+            
                 <div class="payments">
+                    <div>Worldwide Delivery</div>
                     <p>
                         Covers more than 200 countries and regions worldwide>
                     </p>
                 </div>    
-            </div>
-            <div>International Brands<br>
+            
+            
                 <div class="payments">
+                    <div>International Brands</div>
                     <p>
                         Guaranteed authenticity
                     </p>
                 </div>
-            </div>
+            
         </div>
     <hr>
         <div class="about">
             <h2 class="about">About Joybuy</h2>
-            <p class="about">
+            <p>
             Operated by Chinese ecommerce giant, JD.com, Joybuy offers online shoppers a wide selection of smartphones, gaming laptops, consumer electronics, women's clothing, stuffed toys, and more.
     
             As China’s largest ecommerce platform by revenue, JD.com offers a world-class set of online shopping services to its legion of users, who now number close to 200 million in total.
@@ -228,8 +249,8 @@
             <h2>Find Out More</h2>
             <p>Browse Alphabetically : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0~9 </p>
         </div>
-        
-        <div class = "flex-container">
+        <!--
+        <div class="flex-container">
                 <div>Customer Service<br>
                     <div class="services">
                         <div><br> My Orders</div>
@@ -273,8 +294,11 @@
                     </div>
                 </div>   
         </div>
+        -->
+
+        
     </div>
-    <br><hr>
+    
 </div>
 
 <script type="text/javascript">  
