@@ -113,10 +113,41 @@
     .flex-container > div {
         width: 100px;
         text-align: center;
-        font-size: 15px;
+        font-size: 20px;
         white-space: nowrap;
-        padding-left: 100px;
-        padding-right: 100px;
+
+    }
+
+    .container > div {
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        white-space: nowrap;
+
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main {
+    width: 1220px;
+    margin: 0 auto;
+    }
+    .services{
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        font-size: 15px;
+        width: 50px;
+    }
+    .payments{
+        color: grey;
+        font-size: 15px;
+        width: 100px;
+        word-wrap: break-word;
+
     }
 </style>
 </head>  
@@ -140,32 +171,110 @@
     <a class="left" onclick="nextSlide(-1)">❮</a>  
     <a class="right" onclick="nextSlide(1)">❯</a>  
 </div> 
-<div class="footer">
-    <div class="about">
-        <h2 class="about">About Joybuy</h2>
-        <p class="about">
-        Operated by Chinese ecommerce giant, JD.com, Joybuy offers online shoppers a wide selection of smartphones, gaming laptops, consumer electronics, women's clothing, stuffed toys, and more.
 
-        As China’s largest ecommerce platform by revenue, JD.com offers a world-class set of online shopping services to its legion of users, who now number close to 200 million in total.
-        
-        JD.com listed on the NASDAQ in May 2014 in the exchange's biggest flotation of that year.
-        
-        As a technology-driven company, JD.com has focused considerable effort in developing a robust and scalable platform that not only supports the company’s rapid growth, but also allows it to provide cutting-edge technology and services to partners and customers.
-        </p>
-    </div>
-    <div class="find">
-        <h2>Find Out More</h2>
-        <p>Browse Alphabetically : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0~9 </p>
-    </div>
+<div class="footer">
+    <div class="main">
+        <div class="container">
+            <div>Secure Payments<br>
+                <div class="payments">
+                   <p>
+                       Play with secure payment methods
+                   </p> 
+                </div>
+            </div>
+            <div>30-day Return Policy<br>
+                <div class="payments">
+                    <p>
+                        If your item is damaged or not as described, you may return it within 30 days after delivery.
+                    </p>
+                </div>
+            </div>
+            <div>24/7 Customer Service<br>
+                <div class="payments">
+                    <p>
+                        We'll respond to you within 24 hours
+                    </p>
+                </div>
+            </div>
+            <div>Worldwide Delivery<br>
+                <div class="payments">
+                    <p>
+                        Covers more than 200 countries and regions worldwide>
+                    </p>
+                </div>    
+            </div>
+            <div>International Brands<br>
+                <div class="payments">
+                    <p>
+                        Guaranteed authenticity
+                    </p>
+                </div>
+            </div>
+        </div>
+    <hr>
+        <div class="about">
+            <h2 class="about">About Joybuy</h2>
+            <p class="about">
+            Operated by Chinese ecommerce giant, JD.com, Joybuy offers online shoppers a wide selection of smartphones, gaming laptops, consumer electronics, women's clothing, stuffed toys, and more.
     
-    <div class = "flex-container">
-            <div>Customer Service</div>
-            <div>Get to Know Us</div>
-            <div>Partner Promotion</div>
-            <div>Make Money with US</div>
-            <div>JD.com Group</div>
+            As China’s largest ecommerce platform by revenue, JD.com offers a world-class set of online shopping services to its legion of users, who now number close to 200 million in total.
+            
+            JD.com listed on the NASDAQ in May 2014 in the exchange's biggest flotation of that year.
+            
+            As a technology-driven company, JD.com has focused considerable effort in developing a robust and scalable platform that not only supports the company’s rapid growth, but also allows it to provide cutting-edge technology and services to partners and customers.
+            </p>
+        </div>
+        <div class="find">
+            <h2>Find Out More</h2>
+            <p>Browse Alphabetically : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0~9 </p>
+        </div>
         
+        <div class = "flex-container">
+                <div>Customer Service<br>
+                    <div class="services">
+                        <div><br> My Orders</div>
+                        <div>Payments</div>
+                        <div>Refunds and Returns</div>
+                        <div>Shipping</div>
+                        <div>Help Center</div>
+                    </div>
+                </div>
+
+                <div>Get to Know Us<br>
+                    <div class="services">
+                        <div><br> About JoyBuy</div>
+                        <div>Investor Relations</div>
+                        <div>Terms and Conditions</div>
+                        <div>Privacy Policy</div>
+                        <div>Contact Us</div>
+                    </div>
+                </div>
+                <div>Partner Promotion
+                    <div class="services">
+                        <div><br> Become an Influencer</div>
+                        <div>Join Affiliate Program</div>
+                        <div>Partnership Coorporatin</div>
+                        <div>JoyBuy Earnongs Guide</div>
+                    </div>
+                </div>
+                <div>Make Money with US
+                    <div class="services">
+                        <div><br> Sell on joybuy.com</div>
+                        <div>Restricted Products</div>
+                        <div>Selling Policies</div>
+                    </div>
+                </div>
+                <div>JD.com Group<br>
+                    <div class="services">
+                        <div><br> About JoyBuy</div>
+                        <div>Investor Relations</div>
+                        <div>Sitio de Espana</div>
+                        <div>Situs Indonesia<br></div>  
+                    </div>
+                </div>   
+        </div>
     </div>
+    <br><hr>
 </div>
 
 <script type="text/javascript">  
