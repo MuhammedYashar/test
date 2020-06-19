@@ -89,15 +89,65 @@ position: relative;
 /* SLIDERS STYLE */
 .sliders {
     position: relative;
-  max-width: 1800px;
-  overflow: hidden;
-  height: 490px;
+    max-width: 1800px;
+    overflow: hidden;
+    height: 490px;
 }
 .sliders img {
     position: absolute;
     left: -21%;
 }
+.showSlide {  
+    display: none  
+}
+.showSlide img {  
+    position: absolute;
+    left: -21%;
+}
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 25px 20px;  
+    margin-top: -22px;  
+    color: white;  
+    font-weight: bold;  
+    font-size: 30px;  
+    transition: 0.6s ease;  
+    border-radius: 0 25px 25px 0;  
+}  
+.right {  
+    right: 0;  
+    border-radius: 25px 0 0 25px;  
+}  
+    .left:hover, .right:hover {  
+        background-color: rgba(115, 115, 115, 0.8);  
+    }
+/* Fading animation */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
 
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
 /* DEILS STYLE  */
 .section_deils {
     transform: translateY(-140px);
@@ -439,4 +489,42 @@ position: relative;
     font-weight: 300;
     font-size: 15px;
     letter-spacing: -0.5px;
+}
+
+/* FOOTER STYLE */
+.section_footer {
+    background-color: #E0DFDF;
+    padding-bottom: 50px;
+}
+.headUpIcon {
+    font-size: 50px;
+}
+.headUps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    border-bottom: 1px solid #cfcece;
+}
+.headUp {
+    width: 190px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headUpIcon {
+
+    padding-bottom: 20px;
+}
+.headUpTitle {
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 18px;
+}
+.headUpDesc {
+    text-align: center;
+    color: #999;
 }
