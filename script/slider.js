@@ -28,3 +28,12 @@
         }  
         slides[slide_index - 1].style.display = "block";  
     }  
+
+    let payAdd = document.getElementById("payAdd");
+    payAdd.addEventListener("click", payAdding);
+
+    function payAdding() {
+        let payImg = document.querySelector(".partnersPayImg");
+        payImg.style.height = 90 + "px";
+        
+    }
