@@ -29,18 +29,64 @@ a, a:hover {
 .section_head {
     padding-bottom: 20px;
 }
-.topHead {
-    font-size: 13px;
-    font-weight: 300;
-    padding: 10px 0 15px;
+
+.navHead ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    
+  }
+  
+  .navHead li {
+    color: #000;
+    display: block;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  .navHead li a {
+    color: #000;
+    font-size: 13px;
+  }
+  
+  .navHead li:hover {
+    cursor: pointer;
+  }
+  .dropdown {
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.2);
+    min-height: 20px;
+    min-width: 120px;
+  }
+  .navHead ul li ul {
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    z-index: 15;
+    
+  }
+  
+.navHead ul li:hover > ul,
+.navHead ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }
-.headMoney, .headGuide, .headHelp, .headMedia, .headSell {
-    padding-right: 15px;
+  
+.navHead ul li ul li {
+    clear: both;
+    width: 100%;
 }
+
+
 .head {
     display: flex;
     align-items: center;
@@ -64,10 +110,15 @@ position: relative;
     height: 37px;
 }
 .headMenu {
-    width: 230px;
+    width: 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.headIcon {
+    color: #E33333;
+    padding-right: 8px;
+    font-size: 18px;
 }
 .headMenuSp {
     display: block;
