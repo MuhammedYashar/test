@@ -2,6 +2,7 @@
 <html>  
 <head>  
 <meta charset="utf-8" />  
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <title>My Slider</title>  
 <style type="text/css">  
     body {  
@@ -15,7 +16,7 @@
             width: 100%;  
     }  
     .slidercontainer {  
-        max-width: 1000px;  
+        width: 100%;  
         position: relative;  
         margin: auto;  
     }  
@@ -79,7 +80,6 @@
 
 <style>
     .footer{
-        position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -94,7 +94,9 @@
         color: grey;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+    .about a{
+        color: #666;
+    }
     .find h2{
         color: black;
         font-family: Arial, Helvetica, sans-serif;
@@ -103,30 +105,19 @@
         color: grey;
         font-family: Arial, Helvetica, sans-serif;
     }
-
     .flex-container{
         display: flex;
-        flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: flex-start;
     }
-
     .flex-container > div {
         width: 100px;
         text-align: center;
         font-size: 20px;
         white-space: nowrap;
-
     }
-
-    .container > div {
-        width: 100px;
-        text-align: center;
-        font-size: 15px;
-        white-space: nowrap;
-    }
-    .container{
-        display: flex;
-        flex-wrap: nowrap;
+    .container {
+        display: flex; 
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -136,39 +127,75 @@
     }
     .services{
         color: grey;
-        font-family: Arial, Helvetica, sans-serif;
         text-align: left;
-        font-size: 15px;
         width: 50px;
-        
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    .services li{
+        list-style: none;
+    }
+    .services a{
+        color: #666;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .services a:hover {
+        color: red;
+   }
     .payments{
-        
+        padding: 20px;
         color: grey;
         text-align: left;
-        width: 50px;
+        height: 100%;
         display: flex;
         flex-direction: column;   
         justify-content: center;
         align-items: center;
         width: 150px;
     }
+    .paymentsIcons{
+        padding-bottom: 15px;
+        font-size: 50px;
+        color: black;
+    }
     .payments > div {
         color: #000;
         padding-bottom: 15px;
+        font-size: 20px;
+        white-space: nowrap;
     }
-    .payments > p {
-        word-wrap: break-word;
-        font-size: 14px;
+    .paymentSpan {
+        font-size: 16px;
         color: #666;
-        
+        text-align: center;
     }
-    .paymentsDesc {
-        word-wrap: break-word;
-        font-size: 14px;
-        color: #666;
-        
+    .partnersBlog{
+        display: flex;
+        justify-content: space-between;
     }
+    .AppImg{
+        display: inline-block;
+        width: 119px;
+        height: 35px;
+        background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
+        background-position: 0 0;
+        vertical-align: middle;
+
+    }
+    .GoogleImg{
+        display: inline-block;
+        width: 119px;
+        height: 35px;
+        background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
+        background-position: 0 -35px;
+        vertical-align: middle;
+    }
+
 </style>
 </head>  
 <body>  
@@ -188,52 +215,64 @@
         <img src="/img/scroll/img4.png" />  
     </div>  
     <!-- Navigation arrows -->  
-    <a class="left" onclick="nextSlide(-1)">❮</a>  
-    <a class="right" onclick="nextSlide(1)">❯</a>  
+    <a class="left" onclick="nextSlide(-1)"> ❮ </a>  
+    <a class="right" onclick="nextSlide(1)"> ❯ </a>  
 </div> 
 
 <div class="footer">
     <div class="main">
         <div class="container">
                 <div class="payments">
+                    <span class="paymentsIcons">
+                        <i class="far fa-credit-card"></i>
+                    </span>
                     <div>Secure Payments</div>
-                   <div class="paymetsDesc">
+                   <span class="paymentSpan">
                        Play with secure payment methods
-                   </div> 
+                   </span> 
                 </div>
             
             
                 <div class="payments">
+                    <span class="paymentsIcons">
+                        <i class="far fa-calendar-check"></i>
+                    </span>
                     <div>30-day Return Policy</div>
                     
-                    <p>
+                    <span class="paymentSpan">
                         If your item is damaged or not as described, you may return it within 30 days after delivery.
-                    </p>
+                    </span>
                 </div>
             
             
                 <div class="payments">
+                    <span class="paymentsIcons">
+                        <i class="fas fa-headset"></i>
+                    </span>
                     <div>24/7 Customer Service</div>
-
-                    <p>
+                    <span class="paymentSpan">
                         We'll respond to you within 24 hours
-                    </p>
+                    </span>
                 </div>
-            
-            
                 <div class="payments">
+                    <span class="paymentsIcons">
+                        <i class="fas fa-globe-americas"></i>
+                    </span>
                     <div>Worldwide Delivery</div>
-                    <p>
+                    <span class="paymentSpan">
                         Covers more than 200 countries and regions worldwide>
-                    </p>
+                    </span>
                 </div>    
             
             
                 <div class="payments">
+                    <span class="paymentsIcons">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </span>
                     <div>International Brands</div>
-                    <p>
+                    <span class="paymentSpan">
                         Guaranteed authenticity
-                    </p>
+                    </span>
                 </div>
             
         </div>
@@ -241,9 +280,9 @@
         <div class="about">
             <h2 class="about">About Joybuy</h2>
             <p>
-            Operated by Chinese ecommerce giant, JD.com, Joybuy offers online shoppers a wide selection of smartphones, gaming laptops, consumer electronics, women's clothing, stuffed toys, and more.
+            Operated by Chinese ecommerce giant, JD.com, Joybuy offers online shoppers a wide selection of <a href="#">smartphones</a>, <a href="#">gaming laptops</a>, <a href="#">consumer electronics</a>, <a href="#">women's clothing</a>, <a href="#">stuffed toys</a>, and more.
     
-            As China’s largest ecommerce platform by revenue, JD.com offers a world-class set of online shopping services to its legion of users, who now number close to 200 million in total.
+            As China’s largest ecommerce platform by revenue, JD.com offers a world-class set of <a href>online shopping</a> services to its legion of users, who now number close to 200 million in total.
             
             JD.com listed on the NASDAQ in May 2014 in the exchange's biggest flotation of that year.
             
@@ -254,68 +293,85 @@
             <h2>Find Out More</h2>
             <p>Browse Alphabetically : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0~9 </p>
         </div>
-        <!--
         <div class="flex-container">
-                <div>Customer Service<br>
+                <div>Customer Service
                     <div class="services">
-                        <div>
-                            <br> My Orders
-                        </div>
-                        <div>
-                            Payments   
-                        </div>
-                        <div>
-                            Refunds and Returns
-                        </div>
-                        <div>
-                            Shipping
-                        </div>
-                        <div>
-                            Help Center
-                        </div>
+                        <ul>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">Payments </a></li>
+                            <li><a href="#">Refunds and Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
                     </div>
                 </div>
-
-                <div>Get to Know Us<br>
+                <div>Get to Know Us
                     <div class="services">
-                        <div><br> About JoyBuy</div>
-                        <div>Investor Relations</div>
-                        <div>Terms and Conditions</div>
-                        <div>Privacy Policy</div>
-                        <div>Contact Us</div>
+                        <ul>
+                        <li><a href="#">About JoyBuy</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                     </div>
                 </div>
                 <div>Partner Promotion
                     <div class="services">
-                        <div><br> Become an Influencer</div>
-                        <div>Join Affiliate Program</div>
-                        <div>Partnership Coorporatin</div>
-                        <div>JoyBuy Earnongs Guide</div>
+                        <ul>
+                        <li><a href="#">Become an Influencer</a></li>
+                        <li><a href="#">Join Affiliate Program</a></li>
+                        <li><a href="#">Partnership Coorporatin</a></li>
+                        <li><a href="#">JoyBuy Earnongs Guide</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div>Make Money with US
                     <div class="services">
-                        <div><br> Sell on joybuy.com</div>
-                        <div>Restricted Products</div>
-                        <div>Selling Policies</div>
+                        <ul>
+                        <li><a href="#">Sell on joybuy.com</a></li>
+                        <li><a href="#">Restricted Products</a></li>
+                        <li><a href="#">Selling Policies</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div>JD.com Group<br>
+                <div>JD.com Group
                     <div class="services">
-                        <div><br> About JoyBuy</div>
-                        <div>Investor Relations</div>
-                        <div>Sitio de Espana</div>
-                        <div>Situs Indonesia<br></div>  
+                        <ul>
+                        <li><a href="#">About JoyBuy</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Sitio de Espana</a></li>
+                        <li><a href="#">Situs Indonesia</a></li>  
+                        </ul>
                     </div>
                 </div>   
         </div>
-        -->
-
-        
+        <hr>
+        <div class="partnersBlog">
+            <div class="containerApp">
+                <div class="containerAppGet">
+                    Get the App:
+                        <span class="AppImg"></span>
+                        <span class="GoogleImg"></span>
+                </div>
+                <div class="containerAppGet">
+                    Partners:
+                </div>
+                <div class="containerAppGet">
+                    Verified by:
+                </div>
+            </div>
+            <div class="containerPay">
+                <div class="containerPayWith">
+                    Pay with:
+                </div>
+                <div class="containerPaywith">
+                    Sign Up:
+                </div>
+            </div>
+        </div>
     </div>
-    
 </div>
-
 <script type="text/javascript">  
     var slide_index = 1;  
     displaySlides(slide_index);  
@@ -339,6 +395,5 @@
         slides[slide_index - 1].style.display = "block";  
     }  
 </script>  
-
 </body>  
 </html>  

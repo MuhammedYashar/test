@@ -700,11 +700,11 @@ position: relative;
 }
 .partnersAppImg {
     display: inline-block;
-    
     width: 100px;
     height: 30px;
     background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
     background-position: 0 -70px;
+    vertical-align: middle;
 }
 .verifiedAppImg {
     display: inline-block;
@@ -712,6 +712,7 @@ position: relative;
     height: 44px;
     background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
     background-position: -108px -100px;
+    vertical-align: middle;
 }
 .appsAppImg {
     margin-right: 10px;
@@ -720,6 +721,7 @@ position: relative;
     height: 35px;
     background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
     background-position: 0 0;
+    vertical-align: middle;
 }
 .googlePlayImg {
     display: inline-block;
@@ -727,4 +729,5 @@ position: relative;
     height: 35px;
     background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
     background-position: 0 -35px;
+    vertical-align: middle;
 }
