@@ -22,6 +22,9 @@ a, a:hover {
     width: 1220px;
     margin: 0 auto;
 }
+*:focus {
+    outline: none;
+}
 /* HEAD STYLE */
 .section_head {
     padding-bottom: 20px;
@@ -527,4 +530,150 @@ position: relative;
 .headUpDesc {
     text-align: center;
     color: #999;
+}
+
+.footAbout {
+    padding:30px 0 30px;
+}
+.footAbout h3 {
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 18px;
+}
+.footAboutText {
+    color:#666;
+    line-height: 1.2;
+}
+.footAboutTextS {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.footAboutLink a {
+    padding:0 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footMenu {
+    width: 190px;
+}
+.footMenus {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #cfcece;
+}
+.footMenu h3 {
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+.footMenu li {
+    padding-bottom: 5px;
+    list-style: none;
+}
+.footMenu li:last-child {
+    padding-bottom: 25px;
+}
+.footMenu li a {
+    font-weight: 300;
+    font-size: 16px;
+    color: #999;
+    list-style: none;
+}
+.sponsorsBlocks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.partnersApp {
+    padding-bottom: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.partners {
+    width: 400px;
+}
+.payInfo {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.partnersPay {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    align-items: flex-start;
+    
+ 
+}
+.partnersPay h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+.partnersPayImg {
+    height: 30px;
+    overflow: hidden;
+}
+.footerSign {
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footerSignForms {
+    position: relative;
+}
+.footerh3 {
+    padding-top: 12px;
+    padding-right: 15px;
+}
+.footerSignInput {
+    background-color: #fff;
+    border: 0;
+    height: 30px;
+    width: 350px;
+    color: #666;
+    padding: 4px 10px;
+}
+.footerSignButton {
+    position: absolute;
+    background-color: #E33333;
+    border: 0;   
+    width: 120px;
+    height: 30px;
+}
+.partnersAppImg {
+    display: inline-block;
+    
+    width: 100px;
+    height: 30px;
+    background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
+    background-position: 0 -70px;
+}
+.verifiedAppImg {
+    display: inline-block;
+    width: 54px;
+    height: 44px;
+    background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
+    background-position: -108px -100px;
+}
+.appsAppImg {
+    margin-right: 10px;
+    display: inline-block;
+    width: 119px;
+    height: 35px;
+    background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
+    background-position: 0 0;
+}
+.googlePlayImg {
+    display: inline-block;
+    width: 119px;
+    height: 35px;
+    background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
+    background-position: 0 -35px;
 }
