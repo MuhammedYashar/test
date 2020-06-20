@@ -7,6 +7,9 @@ html {
     margin: 0;
     box-sizing: inherit;
 }
+a:hover{
+    color:#e33333;
+}
 body {
     width: 100%;
     background-color: #ffffff;
@@ -14,7 +17,7 @@ body {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
-a, a:hover {
+a {
     text-decoration: none;
     color: #000000;
 }
