@@ -57,6 +57,10 @@ a {
   
   .navHead li:hover {
     cursor: pointer;
+    
+  }
+  .navHead a:hover{
+    color: #e33333;
   }
   .dropdown {
     box-shadow: 0 0 6px 0 rgba(0,0,0,.2);
@@ -859,6 +863,7 @@ CATEGORY
     border: 0;   
     width: 120px;
     height: 30px;
+    color:#fff
 }
 .partnersAppImg {
     display: inline-block;
