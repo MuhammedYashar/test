@@ -34,6 +34,5 @@
 
     function payAdding() {
         let payImg = document.querySelector(".partnersPayImg");
-        payImg.style.height = 90 + "px";
-        
+        payImg.style.height = 90 + "px";     
     }

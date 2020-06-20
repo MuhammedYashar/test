@@ -16,7 +16,7 @@
             width: 100%;  
     }  
     .slidercontainer {  
-        width: 100%;  
+        max-width: 1700px;  
         position: relative;  
         margin: auto;  
     }  
@@ -185,8 +185,16 @@
         background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
         background-position: 0 0;
         vertical-align: middle;
-
     }
+    .partnersPayImg {
+        height: 30px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .active:after {
+        content: "\2212";
+    }
+
     .GoogleImg{
         display: inline-block;
         width: 119px;
@@ -221,7 +229,7 @@
 
 <div class="footer">
     <div class="main">
-        <div class="container">
+        <erdiv class="container">
                 <div class="payments">
                     <span class="paymentsIcons">
                         <i class="far fa-credit-card"></i>
@@ -231,8 +239,6 @@
                        Play with secure payment methods
                    </span> 
                 </div>
-            
-            
                 <div class="payments">
                     <span class="paymentsIcons">
                         <i class="far fa-calendar-check"></i>
@@ -243,8 +249,6 @@
                         If your item is damaged or not as described, you may return it within 30 days after delivery.
                     </span>
                 </div>
-            
-            
                 <div class="payments">
                     <span class="paymentsIcons">
                         <i class="fas fa-headset"></i>
@@ -364,6 +368,9 @@
             <div class="containerPay">
                 <div class="containerPayWith">
                     Pay with:
+                    <div class="partnersPayImg">
+                        <img src="https://img10.joybuy.com/devfe/jfs/t1/8057/2/9618/10950/5c18b9a1Ece528c5e/e94c7bad5e58109a.png">
+                    </div>
                 </div>
                 <div class="containerPaywith">
                     Sign Up:
@@ -393,7 +400,23 @@
             slides[i].style.display = "none";  
         }  
         slides[slide_index - 1].style.display = "block";  
-    }  
+    } 
+    
+    var collapsible = document.getElementsByClassName("partnersPayImg")
+    var i;
+
+    for(i = 0; i < collapsible; i++){
+        collapsible[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if(content.style.maxHeight){
+                content.style.maxHeight = null;
+            }
+            else{
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
 </script>  
 </body>  
 </html>  
