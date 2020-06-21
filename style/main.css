@@ -14,10 +14,11 @@ body {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
-a, a:hover {
+a {
     text-decoration: none;
     color: #000000;
 }
+
 .main {
     width: 1220px;
     margin: 0 auto;
@@ -100,13 +101,17 @@ position: relative;
     border: 0;
     height: 37px;
     width: 500px;
+    padding: 5px 10px;
+    font-size: 14px;
 }
 .headSearchButton {
     position: absolute;
     background-color: #E33333;
-    border: 0;   
-    width: 37px;
+    border: 0;
+    color: #ffffff;   
+    width: 40px;
     height: 37px;
+    cursor: pointer;
 }
 .headMenu {
     width: 250px;
@@ -146,6 +151,7 @@ CATEGORY
     padding-right: 180px;
     z-index: 150;
     background-color: #fff;
+    cursor: pointer;
 }
 .category-heading:hover > div {
     display: block;
@@ -889,4 +895,9 @@ CATEGORY
     background-image: url(http://static.joybuy.com/ept/header/1.1.0/components/footer/i/__sprite.png);
     background-position: 0 -35px;
     vertical-align: middle;
+}
+#payAdd {
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
 }
