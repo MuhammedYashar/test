@@ -33,6 +33,8 @@
     payAdd.addEventListener("click", payAdding);
     let numberOpen = 1;
     function payAdding() {
+        let payImg = document.querySelector(".partnersPayImg");
+        payImg.style.height = 90 + "px";     
         numberOpen++;
         if(numberOpen%2 == 0){
             let payImg = document.querySelector(".partnersPayImg");
